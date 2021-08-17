@@ -12,7 +12,7 @@
 :root{
     --first-color: rgb(100, 87, 224);
     --first-color-alt: rgb(90, 67, 203);
-    --first-color-lighter: rgb(193, 182, 252);
+    --first-color-lighter: rgb(233, 230, 255);
     --title-color: rgb(36, 35, 41);
     --text-color: rgb(109, 106, 124);
     --text-color-light: rgb(161, 159, 173);
@@ -614,7 +614,196 @@ body{
 
 /*=========================Have a New Project========================*/
 
+/*=======================Contact Us Form Starts======================*/
 
+#contact{
+    width: 80%;
+    margin: auto;
+    padding-top: 70px;
+    text-align: center;
+    background-color: var(--container-color);
+}
+
+#contact>.heading{
+    margin-bottom: 30px;
+}
+
+#contact>.contact-container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 626px;
+}
+
+#contact>.contact-container>.contact1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    text-align: left;
+    background-color: var(--first-color-lighter);
+}
+
+#contact>.contact-container>.contact1>.contact1-1{
+    padding: 15px;
+    width: 100%;
+    height: 50%;
+}
+
+#contact>.contact-container>.contact1>.contact1-1>h1{
+    color: var(--title-color);
+    font-size: var(--h1-font-size);
+}
+
+#contact>.contact-container>.contact1>.contact1-1>p{
+    color: var(--title-color);
+    font-size: var(--h2-font-size);
+}
+
+#contact>.contact-container>.contact1>.contact1-1>p>i{
+    color: var(--first-color);
+    font-size: var(--h1-font-size);
+}
+
+#contact>.contact-container>.contact1>.contact1-1>.ppp{
+    margin: 30px 0px;
+}
+
+#contact>.contact-container>.contact1>.contact1-2{
+    width: 100%;
+    height: 50%;
+}
+
+#contact>.contact-container>.contact2{
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    background-color: var(--first-color);
+}
+
+#contact>.contact-container>.contact2>h1{
+    color: var(--container-color);
+    font-size: var(--h1-font-size);
+    letter-spacing: 5px;
+}
+
+#contact>.contact-container>.contact2>form{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: 1.5rem;
+}
+
+#contact>.contact-container>.contact2>form>input{
+    border: 1.5px solid white;
+    background-color: transparent;
+    outline: none;
+    width: 350px;
+    padding: 15px 30px;
+    border-radius: 15px;
+    color: var(--container-color);
+}
+
+#contact>.contact-container>.contact2>form>textarea{
+    border: 1.5px solid white;
+    background-color: transparent;
+    outline: none;
+    width: 350px;
+    height: 250px;
+    padding: 15px 30px;
+    border-radius: 15px;
+    color: var(--container-color);
+}
+
+input::placeholder{
+    color: white;
+    letter-spacing: 10px;
+}
+
+textarea::placeholder{
+    color: white;
+    letter-spacing: 10px;
+}
+
+.btn2{
+    padding: 10px 35px;
+    border: 1.5px solid var(--container-color);
+    background-color: transparent;
+    color: var(--container-color);
+    font-size: var(--h3-font-size);
+    border-radius: 10px;
+}
+
+/*========================Contact Us Form Ends=======================*/
+
+
+/*===========================Footer Starts===========================*/
+
+footer{
+    width: 100%;
+    margin-top: 50px;
+    padding: 30px;
+    text-align: center;
+    background-color: var(--first-color);
+    color: white;
+}
+
+footer>.footer-container{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: 1rem;
+}
+
+footer>.footer-container>.one>h1{
+    font-size: var(--h1-font-size);
+    letter-spacing: 12px;
+}
+
+footer>.footer-container>.one>p{
+    font-size: var(--h2-font-size);
+    letter-spacing: 5px;
+    margin-top: 15px;
+}
+
+footer>.footer-container>.two{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+footer>.footer-container>.two>.footer-text{
+    text-align: left;
+    width: 23%;
+}
+
+footer>.footer-container>.two>.footer-text>p{
+    font-size: var(--h1-font-size);
+    margin-bottom: 8px;
+}
+
+footer>.footer-container>.two>.footer-text>a{
+    color: var(--container-color);
+    font-size: var(--normal-font-size);
+    margin: 0px;
+}
+
+footer>.footer-container>.three>p{
+    font-size: var(--normal-font-size);
+}
+
+/*============================Footer Ends============================*/
 
 
 /*==========================Media Queries===========================*/
@@ -656,6 +845,10 @@ body{
 
     .swiper-button-next:after, .swiper-button-prev:after {
         font-size: 30px;
+    }
+
+    #contact{
+        width: 92%;
     }
 }
 
@@ -819,6 +1012,57 @@ body{
     #portfolio>.portfolio-container>.swiper-container>.swiper-wrapper>.swiper-slide>.portfolio-box>.portfolio-text {
         width: 85%;
     }
+
+    #contact>.contact-container{
+        justify-content: center;
+        flex-wrap: wrap;
+        border-radius: 0px;
+        height: fit-content;
+    }
+
+    #contact>.contact-container>.contact1{
+        width: 90%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }    
+
+    #contact>.contact-container>.contact2{
+        width: 90%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    #contact>.contact-container>.contact1>.contact1-1>.ppp {
+        margin: 10px 0px;
+    }
+
+    #contact>.contact-container>.contact2>form {
+        gap: .5rem;
+    }
+
+    #contact>.contact-container>.contact2>form>input {
+        width: 400px;
+        padding: 12px 30px;
+    }
+
+    #contact>.contact-container>.contact2>form>textarea {
+        width: 400px;
+        height: 100px;
+        padding: 15px 30px;
+    }
+
+    footer>.footer-container{
+        width: 100%;
+    }
+
+    footer>.footer-container>.two{
+        flex-wrap: wrap;
+    }
+
+    footer>.footer-container>.two>.footer-text{
+        width: 80%;
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 420px){
@@ -903,6 +1147,33 @@ body{
         font-size: 20px;
         color: var(--first-color);
         font-weight: 900;
+    }
+
+    #contact {
+        width: 95%;
+        padding-top: 20px;
+    }
+
+    #contact>.contact-container>.contact2>form>input {
+        width: 280px;
+    }
+
+    #contact>.contact-container>.contact2>form>textarea{
+        width: 280px;
+    }
+
+    #contact>.contact-container>.contact2>form {
+        margin-top: 15px;
+    }
+
+    footer>.footer-container>.two {
+        margin: 0px 0px;
+    }
+
+    footer>.footer-container>.one>p {
+        font-size: var(--h2-font-size);
+        letter-spacing: 0px;
+        margin: 15px 0px;
     }
 }
 
