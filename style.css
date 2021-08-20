@@ -1163,8 +1163,7 @@ footer>.footer-container>.three>p{
     }
 
     .swiper-button-next:after, .swiper-button-prev:after {
-        font-size: 20px;
-        color: var(--first-color);
+        font-size: 25px;
         font-weight: 900;
     }
 
@@ -1198,6 +1197,10 @@ footer>.footer-container>.three>p{
     footer>.footer-container>.two>.footer-text{
         display: flex;
         flex-flow: column;
+    }
+    
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 10px;
     }
 }
 
