@@ -728,7 +728,7 @@ body.theme-change{
     width: 350px;
     padding: 15px 30px;
     border-radius: 15px;
-    color: var(--container-color);
+    color: white;
 }
 
 #contact>.contact-container>.contact2>form>textarea{
@@ -739,7 +739,7 @@ body.theme-change{
     height: 250px;
     padding: 15px 30px;
     border-radius: 15px;
-    color: var(--container-color);
+    color: white;
 }
 
 input::placeholder{
